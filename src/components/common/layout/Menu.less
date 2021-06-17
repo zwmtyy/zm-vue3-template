@@ -1,0 +1,136 @@
+// top-menu
+
+.zm_basic_menu {
+  color: rgba(255, 255, 255, 0.65) !important;
+  background-color: transparent !important;
+  height: calc(~"100% - 60px");
+  overflow-y: auto;
+  overflow-x: hidden;
+  border: 0 !important;
+
+  // 重置菜单项行高
+  .ant-menu-item,
+  .ant-menu-sub.ant-menu-inline > .ant-menu-item,
+  .ant-menu-sub.ant-menu-inline > .ant-menu-submenu > .ant-menu-submenu-title {
+    height: 45px;
+    margin: 0;
+    background-color: transparent !important;
+    line-height: 45px;
+  }
+
+  .ant-menu-submenu > .ant-menu {
+    background-color: rgb(79, 96, 136) !important;
+    color: rgba(255, 255, 255, 0.65);
+  }
+
+  .ant-menu-item:hover,
+  .ant-menu-item-active,
+  .ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open,
+  .ant-menu-submenu-active,
+  .ant-menu-submenu-title:hover {
+    color: white;
+  }
+
+  .ant-menu-item-selected {
+    color: white;
+    border-radius: 2px;
+    box-shadow: rgba(1, 143, 251, 0.7) 0px 0px 4px 1px;
+    background: linear-gradient(
+      118deg,
+      rgba(1, 143, 251, 0.7),
+      rgb(1, 143, 251)
+    );
+  }
+
+  .ant-menu-submenu-vertical
+    > .ant-menu-submenu-title:hover
+    .ant-menu-submenu-arrow::after,
+  .ant-menu-submenu-vertical-left
+    > .ant-menu-submenu-title:hover
+    .ant-menu-submenu-arrow::after,
+  .ant-menu-submenu-vertical-right
+    > .ant-menu-submenu-title:hover
+    .ant-menu-submenu-arrow::after,
+  .ant-menu-submenu-inline
+    > .ant-menu-submenu-title:hover
+    .ant-menu-submenu-arrow::after,
+  .ant-menu-submenu-vertical
+    > .ant-menu-submenu-title:hover
+    .ant-menu-submenu-arrow::before,
+  .ant-menu-submenu-vertical-left
+    > .ant-menu-submenu-title:hover
+    .ant-menu-submenu-arrow::before,
+  .ant-menu-submenu-vertical-right
+    > .ant-menu-submenu-title:hover
+    .ant-menu-submenu-arrow::before,
+  .ant-menu-submenu-inline
+    > .ant-menu-submenu-title:hover
+    .ant-menu-submenu-arrow::before {
+    background: linear-gradient(to right, #fff, #fff);
+  }
+
+  .ant-menu-submenu-vertical
+    > .ant-menu-submenu-title
+    .ant-menu-submenu-arrow::before,
+  .ant-menu-submenu-vertical-left
+    > .ant-menu-submenu-title
+    .ant-menu-submenu-arrow::before,
+  .ant-menu-submenu-vertical-right
+    > .ant-menu-submenu-title
+    .ant-menu-submenu-arrow::before,
+  .ant-menu-submenu-inline
+    > .ant-menu-submenu-title
+    .ant-menu-submenu-arrow::before,
+  .ant-menu-submenu-vertical
+    > .ant-menu-submenu-title
+    .ant-menu-submenu-arrow::after,
+  .ant-menu-submenu-vertical-left
+    > .ant-menu-submenu-title
+    .ant-menu-submenu-arrow::after,
+  .ant-menu-submenu-vertical-right
+    > .ant-menu-submenu-title
+    .ant-menu-submenu-arrow::after,
+  .ant-menu-submenu-inline
+    > .ant-menu-submenu-title
+    .ant-menu-submenu-arrow::after {
+    background: linear-gradient(
+      rgba(255, 255, 255, 0.65),
+      rgba(255, 255, 255, 0.65)
+    );
+  }
+
+  .ant-menu-submenu-selected.ant-menu-submenu-vertical
+    > .ant-menu-submenu-title
+    .ant-menu-submenu-arrow::before,
+  .ant-menu-submenu-selected.ant-menu-submenu-vertical-left
+    > .ant-menu-submenu-title
+    .ant-menu-submenu-arrow::before,
+  .ant-menu-submenu-selected.ant-menu-submenu-vertical-right
+    > .ant-menu-submenu-title
+    .ant-menu-submenu-arrow::before,
+  .ant-menu-submenu-selected.ant-menu-submenu-inline
+    > .ant-menu-submenu-title
+    .ant-menu-submenu-arrow::before,
+  .ant-menu-submenu-selected.ant-menu-submenu-vertical
+    > .ant-menu-submenu-title
+    .ant-menu-submenu-arrow::after,
+  .ant-menu-submenu-selected.ant-menu-submenu-vertical-left
+    > .ant-menu-submenu-title
+    .ant-menu-submenu-arrow::after,
+  .ant-menu-submenu-selected.ant-menu-submenu-vertical-right
+    > .ant-menu-submenu-title
+    .ant-menu-submenu-arrow::after,
+  .ant-menu-submenu-selected.ant-menu-submenu-inline
+    > .ant-menu-submenu-title
+    .ant-menu-submenu-arrow::after {
+    background: linear-gradient(to right, #fff, #fff);
+  }
+
+  .ant-menu-submenu-selected {
+    color: white;
+  }
+
+  .ant-menu-item.zm_menu_item_returnsystem {
+    background: rgba(255, 255, 255, 0.1) !important;
+  }
+}
