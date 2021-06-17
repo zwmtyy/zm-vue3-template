@@ -115,6 +115,17 @@ function installMsg(data) {
  */
 function runCommand(cmd, args, options) {
   return new Promise((resolve, reject) => {
+    console.log('cmd:', cmd);
+    console.log('args:', args);
+    console.log('obj:', Object.assign(
+      {
+        cwd: process.cwd(),
+        stdio: 'inherit',
+        shell: true,
+      },
+      options
+    ));
+    
     const spwan = spawn(
       cmd,
       args,
