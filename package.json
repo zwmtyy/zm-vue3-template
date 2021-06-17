@@ -1,0 +1,17 @@
+{
+  "name": "vue3-template",
+  "version": "1.0.0",
+  "license": "MIT",
+  "description": "vue3-template",
+  "scripts": {
+    "docs": "cd docs && gitbook serve",
+    "docs:deploy": "bash ./deploy-docs.sh"
+  },
+  "devDependencies": {
+    "zm-init": "^1.0.0",
+    "shrinkwrap": "^0.4.0"
+  },
+  "main": "index.js",
+  "repository": "",
+  "author": "weiming.zhang"
+}
